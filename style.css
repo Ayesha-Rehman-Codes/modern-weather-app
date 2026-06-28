@@ -1,0 +1,108 @@
+:root {
+    --bg-sunny: linear-gradient(135deg, #fadfa4, #e68721);
+    --bg-rainy: linear-gradient(135deg, #d8d7d7, #303133);
+    --bg-cloudy: linear-gradient(135deg, #bdc3c7, #44525f);
+    --bg-default: linear-gradient(135deg, #74ebea, #4e65ff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #d8e2f1;
+}
+
+.app-container {
+    background: var(--bg-default);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    transition: background 0.5s ease-in-out;
+    color: #ffffff;
+}
+
+header h1 {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.search-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+#cityInput {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+}
+
+button {
+    font-size: 14px;
+    padding: 12px;
+    border: none;
+    background-color: #fff;
+    color: #f0b432;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    font-size: 14px;
+    transform: scale(1.05);
+    color: #525151;
+    background-color: #ffffff;
+}
+
+.weather-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-top: 1rem;
+}
+
+.temp-display {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.weather-icon {
+    font-size: 4rem;
+}
+
+.weather-details {
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 1rem;
+}
+
+.error-message {
+    background-color: rgba(245, 18, 18, 0.8);
+    border: solid rgb(185, 24, 24) 1px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.hidden {
+    display: none !important;
+}
