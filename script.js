@@ -1,5 +1,5 @@
 // OpenWeatherMap API Configurations
-const API_KEY = '9993cb122c3c799eca1f9904f53de170'; // Apni actual API Key yahan lagayein
+const API_KEY = '9993cb122c3c799eca1f9904f53de170';
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
 // DOM Elements Selection
